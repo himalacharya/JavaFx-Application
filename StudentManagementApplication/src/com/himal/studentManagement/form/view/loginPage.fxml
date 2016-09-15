@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.himal.studentManagement.form.ctrl.MainController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="VBox" stylesheets="@main.css" />
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="userName" layoutX="47.0" layoutY="22.0" prefHeight="45.0" prefWidth="102.0" text="Username" textFill="#c92014" />
+                  <Label fx:id="password" layoutX="47.0" layoutY="67.0" prefHeight="45.0" prefWidth="102.0" text="Password" textFill="#d02424" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="userNameTextField" layoutX="26.0" layoutY="34.0" prefHeight="25.0" prefWidth="220.0" />
+                  <PasswordField fx:id="passwordTextField" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Button fx:id="login" layoutX="294.0" layoutY="119.0" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="506.0">
+               <children>
+                  <Button fx:id="cancel" layoutX="182.0" layoutY="25.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel" />
+                  <Button fx:id="signup" layoutX="398.0" layoutY="25.0" mnemonicParsing="false" onAction="#signupAction" text="Sign Up" />
+                  <Button fx:id="feedback" layoutX="100.0" layoutY="63.0" mnemonicParsing="false" onAction="#feedbackAction" prefHeight="25.0" prefWidth="306.0" text="FEEDBACK" textFill="#bf2c2c">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

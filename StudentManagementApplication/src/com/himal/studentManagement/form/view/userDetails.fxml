@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="VBox" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.himal.studentManagement.form.ctrl.UserDetailController">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="73.0" layoutY="32.0" prefHeight="233.0" prefWidth="302.0" >
+        <columns>
+            <TableColumn fx:id="tableID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tableUserName" prefWidth="75.0" text="User Name" />
+            <TableColumn fx:id="tablePassword" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="tableContact" prefWidth="75.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="134.0" layoutY="305.0" mnemonicParsing="false" onAction="#backAction" text="Back" textFill="#d72929" />
+      <Button fx:id="update" layoutX="262.0" layoutY="305.0" mnemonicParsing="false" text="Update" textFill="#41993a" textOverrun="CENTER_ELLIPSIS" />
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
